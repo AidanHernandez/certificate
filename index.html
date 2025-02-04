@@ -11,22 +11,40 @@
 
     <h2>Welcome, choose what Certificate you want, then type in the recipent and issuer name and we'll do the rest</h2>
 
-
-    <div class="dropdown">
-        <button class="dropbtn">Dropdown</button>
-        <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
+    <div class="choices">
+      <div class="choiceOne">
+        
+        <img src="img/certificateLiving.png" alt="Choice one" id="living">
       </div>
+      <div class="choiceTwo">
+        
+        <img src="img/certificateAverage.png" alt="Choice two" id="average">
+      </div>
+      <div class="choiceThree">
+        
+        <img src="img/certificateBoring.png" alt="Choice three" id="boring">
+      </div>
+    </div>
+        
 
     <form action="">
-        <label for="name">recipient</label>
-        <input type="text" id="name" name="name" placeholder="Name"><br>
-        <label for="Issued">Issued By</label>
-        <input type="text" id="Issued" name="Issued" placeholder="Name"><br><br>
-        <input type="submit" value="Submit">
-      </form> 
+        <section class="top">
+          <div class="recipient">
+            <label for="name">recipient</label>
+            <input type="text" id="name" name="name" placeholder="Name"><br>
+          </div>
+          <div class="issued">
+            <label for="Issued">Issued By</label>
+            <input type="text" id="Issued" name="Issued" placeholder="Name"><br><br>
+          </div>
+        </section>
+        <section class="bottom">
+          <input type="submit" value="Submit">
+        </section>
+    </form> 
+
+
+
+    <script src="index.js"></script>
 </body>
 </html>
