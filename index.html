@@ -12,22 +12,21 @@
     <h2>Welcome, choose what Certificate you want, then type in the recipent and issuer name and we'll do the rest</h2>
 
     <div class="choices">
-      <div class="choiceOne">
-        
-        <img src="img/certificateLiving.png" alt="Choice one" id="living">
+      <div class="choiceOne" id="choiceOne">
+        <img src="img/certificateLiving.png" alt="Choice one" id="living" class="living">
       </div>
-      <div class="choiceTwo">
-        
+      <div class="choiceTwo" id="choiceTwo">
         <img src="img/certificateAverage.png" alt="Choice two" id="average">
       </div>
-      <div class="choiceThree">
-        
+      <div class="choiceThree"  id="choiceThree">
         <img src="img/certificateBoring.png" alt="Choice three" id="boring">
       </div>
+
+      <div class="movingBorder" ></div>
     </div>
         
 
-    <form action="">
+    <!-- <form action="">
         <section class="top">
           <div class="recipient">
             <label for="name">recipient</label>
@@ -41,9 +40,9 @@
         <section class="bottom">
           <input type="submit" value="Submit">
         </section>
-    </form> 
+    </form>  -->
 
-
+    <main class="certificate" id="certificate" style="width: 0%; height: 0%;"></main>
 
     <script src="index.js"></script>
 </body>
