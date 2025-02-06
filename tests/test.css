@@ -61,6 +61,11 @@ main{
   left: 140px;
 }
 
+.info{
+  display: inline-flex;
+  flex-flow: column;
+
+}
 
 
 .info > img:first-of-type{
@@ -72,4 +77,71 @@ main{
   font-size: 55px;
   margin-top: 5px;
   margin-left: 392px;
+  margin-bottom: 4px;
+}
+
+hr:first-of-type{
+  width: 433px;
+  border: 1.5px black solid;
+  margin-left: 392px;
+  
+}
+
+.info > input:first-of-type{
+  border: none;
+  font-size: 55px;
+  width: 290px;
+  text-align: center;
+  margin-left: 465px;
+
+}
+
+.info > img:nth-of-type(2){
+  width: 501px;
+  margin-top: 24px;
+  margin-left: 356px;
+}
+
+.info > p:nth-of-type(2){
+  font-size: 32px;
+  width: 520px;
+  text-align: center;
+  margin-left: 360px;
+  margin-top: 18px;
+  margin-bottom: 10px;
+}
+
+.end{
+  display: inline-flex;
+  flex-flow: row;
+}
+
+.collumnOne{
+  display: inline-flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  margin-left: ;
+
+}
+
+.collumnTwo{
+  display: inline-flex;
+  flex-flow: column;
+}
+
+.collumnOne > input:last-of-type{
+  border: none;
+  font-size: 36px;
+  color: gold;
+  text-align: center;
+  width: 200px;
+
+}
+
+.collumnOne > hr{
+  margin-top: 0;
+  width: 125px;
+  margin-left: 0;
 }
