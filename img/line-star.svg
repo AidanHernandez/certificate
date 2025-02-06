@@ -1,0 +1,13 @@
+<svg width="535" height="36" viewBox="0 0 535 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="332" y1="18.5" x2="535" y2="18.5" stroke="#FFE432"/>
+<circle cx="533.5" cy="18.5" r="1.5" fill="#FFE432"/>
+<circle cx="528.5" cy="18.5" r="2.5" fill="#FFE432"/>
+<circle cx="521.5" cy="18.5" r="3.5" fill="#FFE432"/>
+<line x1="203" y1="18.5" x2="7.62502e-05" y2="18.5" stroke="#FFE432"/>
+<circle cx="1.49997" cy="18.5" r="1.5" transform="rotate(-180 1.49997 18.5)" fill="#FFE432"/>
+<circle cx="6.49997" cy="18.5" r="2.5" transform="rotate(-180 6.49997 18.5)" fill="#FFE432"/>
+<circle cx="13.5" cy="18.5" r="3.5" transform="rotate(-180 13.5 18.5)" fill="#FFE432"/>
+<path d="M228.5 12L230.256 16.7444L235 18.5L230.256 20.2556L228.5 25L226.744 20.2556L222 18.5L226.744 16.7444L228.5 12Z" fill="#FFE432"/>
+<path d="M307.5 12L309.256 16.7444L314 18.5L309.256 20.2556L307.5 25L305.744 20.2556L301 18.5L305.744 16.7444L307.5 12Z" fill="#FFE432"/>
+<path d="M268 0L272.862 13.1384L286 18L272.862 22.8616L268 36L263.138 22.8616L250 18L263.138 13.1384L268 0Z" fill="#FFE432"/>
+</svg>
