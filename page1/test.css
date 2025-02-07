@@ -195,3 +195,28 @@ main > img:last-of-type{
   right: 0;
   transform: rotate(180deg);
 }
+
+.options{
+  position: absolute;
+  top: 0;
+  right: 300px;
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.options > button{
+  border-radius: 30px;
+  border: none;
+  width: 75px;
+  height: 75px;
+  
+}
+
+.options > button > svg{
+  width: 60px;
+  height: 60px;
+  
+}
+

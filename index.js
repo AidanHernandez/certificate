@@ -5,6 +5,7 @@ let choiceThree = document.getElementById("choiceThree");
 let certificateOne = document.getElementById("certificateOne");
 let certificateTwo = document.getElementById("certificateTwo");
 let certificateThree = document.getElementById("certificateThree");
+let options = document.getElementById("options");
 let name;
 let chose;
 
@@ -79,6 +80,7 @@ function chosen(){
     gone.style.display = "none";
     gone = document.querySelector("div");
     gone.style.display = "none";
+    options.style.display = "flex";
 
     switch(chose){
         case "living":
@@ -104,3 +106,37 @@ function chosen(){
 
 
 document.getElementById('date').innerText = new Date().toLocaleDateString()
+
+let back = document.getElementById('back');
+
+
+back.addEventListener("click", (e) => {
+    let gone = document.querySelector("h1");
+    gone.style.display = "flex";
+    gone = document.querySelector("h2");
+    gone.style.display = "flex";
+    gone = document.querySelector("div");
+    gone.style.display = "flex";
+    options.style.display = "none";
+    switch(chose){
+        case "living":
+            certificateOne.style.display = "none"
+            
+            document.getElementById('customCss').setAttribute('href', 'none');
+            return
+        case "Average":
+            certificateTwo.style.display = "none"
+
+            document.getElementById('customCss').setAttribute('href', 'none');
+            console.log("average")
+            return
+        case "Boring":
+            certificateThree.style.display = "none"
+
+            document.getElementById('customCss').setAttribute('href', 'none');
+            console.log("borimg")
+            return
+
+    }
+
+});

@@ -36,6 +36,7 @@ h2{
     width: 100%;
     justify-content: space-evenly;
     height: 900px;
+    align-items: center;
 }
 
 .choiceOne, .choiceTwo, .choiceThree{
@@ -368,4 +369,36 @@ main{
     top: 0px;
     left: 250px
   }
+
+  .options{
+    display: none !important;
+  }
+
 }
+
+
+
+.options{
+  position: absolute;
+  top: 0;
+  right: 300px;
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  justify-content: space-evenly;
+}
+
+.options > button{
+  border-radius: 30px;
+  border: none;
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+}
+
+.options > button > svg{
+  width: 60px;
+  height: 60px;
+  
+}
+
