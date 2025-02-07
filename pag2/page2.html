@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page2.css">
+</head>
+<body>
+    <main class="certificate" id="certificate" style="width: 1100px; height: 850px; background-color: white;">
+        <img src="../img/starsBehind.svg" alt="stars">
+        <section class="center">
+            <h2>Congratulations</h2>
+            <img src="../img/YourAverage.svg" alt="average">
+            <p>This award is given to someone who is perfectly average. </p>
+            <img src="../img/Awardedto.svg" alt="award">
+            <input type="text" placeholder="Insert Name Here">
+            <hr>
+            <aside class="info">
+                <aside class="columnOne">
+                    <input type="text" placeholder="Insert Issuer">
+                    <hr>
+                    <p>Manager</p>
+                </aside>
+                <aside class="columnTwo">
+                    <p id="date">date</p>
+                    <hr>
+                    <p>Date Issued</p>
+                </aside>
+            </aside>
+        </section>
+        <img src="../img/starsFront.svg" alt="stars">
+    </main>
+    
+    <script src="../index.js"></script>
+    <script>document.getElementById('date').innerText = new Date().toLocaleDateString();</script>
+</body>
+</html>

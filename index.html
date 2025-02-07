@@ -4,12 +4,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Generator</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="none" id="customCss">
 </head>
 <body>
 
     <h1>Certificate Generator</h1>
 
-    <h2>Welcome, choose what Certificate you want, then type in the recipent and issuer name and we'll do the rest</h2>
+    <h2>Welcome, choose what Certificate you want,  and we'll do the rest</h2>
 
     <div class="choices">
       <div class="choiceOne" id="choiceOne">
@@ -26,23 +27,9 @@
     </div>
         
 
-    <!-- <form action="">
-        <section class="top">
-          <div class="recipient">
-            <label for="name">recipient</label>
-            <input type="text" id="name" name="name" placeholder="Name"><br>
-          </div>
-          <div class="issued">
-            <label for="Issued">Issued By</label>
-            <input type="text" id="Issued" name="Issued" placeholder="Name"><br><br>
-          </div>
-        </section>
-        <section class="bottom">
-          <input type="submit" value="Submit">
-        </section>
-    </form>  -->
+    
 
-    <main class="certificate" id="certificate" style="width: 0%; height: 0%; display: none;">
+    <main class="certificate" id="certificateOne" style="width: 1100px; height: 850px; background-color: white; display: none;">
       <div class="big-box">
         <section class="small-box">
           <aside class="text">
@@ -59,20 +46,78 @@
             <p>For Your amazing living skills, and unfortunately not dying yet.
               We are proud to provide this certificate to you.</p>
           </aside>
-          <aside class="info">
-            <hr>
-            <input type="text" placeholder="Insert Issuer">
-            <p>Manager</p>
-            <hr>
-            <p>date</p>
-            <p>Date Issued</p>
+          <aside class="end">
+            <aside class="collumnOne">
+                <hr>
+                <input type="text" placeholder="Insert Issuer">
+                <p>Manager</p>
+              </aside>
+            <aside class="collumnTwo">
+              <hr>
+              <p id="date">date</p>
+              <p>Date Issued</p>
+            </aside>
           </aside>
            
         </section>
         
       </div>
+      <img src="img/squares.svg" alt="square">
+      <img src="img/squares.svg" alt="square">
+    </main>
+
+    <main class="certificate" id="certificateTwo" style="width: 1100px; height: 850px; background-color: white; display: none;">
+      <img src="img/starsBehind.svg" alt="stars">
+        <section class="center">
+            <h2>Congratulations</h2>
+            <img src="img/YourAverage.svg" alt="average">
+            <p>This award is given to someone who is perfectly average. </p>
+            <img src="img/Awardedto.svg" alt="award">
+            <input type="text" placeholder="Insert Name Here">
+            <hr>
+            <aside class="info">
+                <aside class="columnOne">
+                    <input type="text" placeholder="Insert Issuer">
+                    <hr>
+                    <p>Manager</p>
+                </aside>
+                <aside class="columnTwo">
+                    <p id="date2">date</p>
+                    <hr>
+                    <p>Date Issued</p>
+                </aside>
+            </aside>
+        </section>
+        <img src="img/starsFront.svg" alt="stars">
+    </main>
+
+    <main class="certificate" id="certificateThree" style="width: 1100px; height: 850px; background-color: white; display: none;">
+      <img src="img/background.png" alt="outer">
+        <section class="center">
+            <img src="img/fancy.png" alt="text">
+            
+            <h2>This Certificate is given to someone boring </h2>
+            <input type="text" placeholder="Insert Name Here">
+            <hr>
+            <section class="end">
+                <section class="columnOne">
+                    <input type="text" placeholder="Insert Issuer">
+                    <hr>
+                    <p>Witness</p>
+                </section>
+                <img src="img/flower.png" alt="flower">
+                <section class="columnTwo">
+                    <p id="date3">date</p>
+                    <hr>
+                    <p>Date Issued</p>
+                </section>
+            </section>
+        </section>
     </main>
 
     <script src="index.js"></script>
+    <script>document.getElementById('date').innerText = new Date().toLocaleDateString();</script>
+    <script>document.getElementById('date2').innerText = new Date().toLocaleDateString();</script>
+    <script>document.getElementById('date3').innerText = new Date().toLocaleDateString();</script>
 </body>
 </html>

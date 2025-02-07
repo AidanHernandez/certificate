@@ -2,7 +2,9 @@
 let ChoiceOne = document.getElementById("choiceOne");
 let choiceTwo = document.getElementById("choiceTwo");
 let choiceThree = document.getElementById("choiceThree");
-let main = document.getElementById("certificate");
+let certificateOne = document.getElementById("certificateOne");
+let certificateTwo = document.getElementById("certificateTwo");
+let certificateThree = document.getElementById("certificateThree");
 let name;
 let chose;
 
@@ -60,6 +62,16 @@ ChoiceOne.addEventListener("click", (e) => {
     chosen()
 });
 
+choiceTwo.addEventListener("click", (e) => {
+    chose = "Average";
+    chosen()
+});
+
+choiceThree.addEventListener("click", (e) => {
+    chose = "Boring";
+    chosen()
+});
+
 function chosen(){
     let gone = document.querySelector("h1");
     gone.style.display = "none";
@@ -68,12 +80,27 @@ function chosen(){
     gone = document.querySelector("div");
     gone.style.display = "none";
 
-    main.style.width = "1100px";
-    main.style.height = "850px";
-
     switch(chose){
         case "living":
-            main.style.backgroundColor = "white";
-            
+            certificateOne.style.display = "flex"
+            certificateOne.style.backgroundColor = "white";
+            document.getElementById('customCss').setAttribute('href', 'page1/test.css');
+            return
+        case "Average":
+            certificateTwo.style.display = "flex"
+            certificateTwo.style.backgroundColor = "white";
+            document.getElementById('customCss').setAttribute('href', 'pag2/page2.css');
+            console.log("average")
+            return
+        case "Boring":
+            certificateThree.style.display = "flex"
+            certificateThree.style.backgroundColor = "white";
+            document.getElementById('customCss').setAttribute('href', 'page3/page3.css');
+            console.log("borimg")
+            return
+
     }
 }
+
+
+document.getElementById('date').innerText = new Date().toLocaleDateString()

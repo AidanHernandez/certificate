@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap');
+
+*{
+  
+  font-family: "Ingrid Darling", serif;
+  font-weight: normal;
+}
+
+body{
+  
+  font-family: "Ingrid Darling", serif;
+    background-color: black;
+}
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main > img:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 2;
+}
+
+.center > img:nth-of-type(1){
+    margin-top: 126px;
+}
+
+.center > h2:first-of-type{
+    color: #908330;
+    font-size: 75px;
+    margin: 0;
+}
+
+.center > input:first-of-type{
+    border: none;
+    text-align: center;
+    font-size: 75px;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.center > hr{
+    width: 650px;
+    border: 1px solid #B9A738;
+}
+
+.end{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.columnOne{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 125px;
+}
+
+.columnOne > input{
+    font-size: 36px;
+    border: none;
+   
+    text-align: center;
+}
+
+.columnOne > hr{
+    width: 125px;
+    border: 1px solid black;
+}
+
+.columnOne > p{
+    font-size: 36px;
+    color: #908330;
+    margin: 0;
+}
+
+.columnTwo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 125px;
+}
+
+.columnTwo > input{
+    font-size: 36px;
+    border: none;
+   
+    text-align: center;
+}
+
+.columnTwo > hr{
+    width: 125px;
+    border: 1px solid black;
+}
+
+.columnTwo > p{
+    font-size: 36px;
+    color: #908330;
+    margin: 0;
+}
+
+.columnTwo > p:first-of-type{
+    font-size: 36px;
+    color: black;
+    margin: 0;
+}

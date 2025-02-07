@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+*{
+  
+    font-family: "Indie Flower", serif;
+    font-weight: normal;
+  }
+  
+  body{
+    position: relative;
+    background-color: black;
+    font-family: "Indie Flower", serif;
+    z-index: 0;
+  }
+
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+}
+
+main > img:last-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+main > img:first-of-type{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.center{
+    width: 700px;
+    height: 600px;
+    border: 2.5px solid #B9A738;
+    border-radius: 10px;
+    z-index: 30;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: black;
+}
+
+.center > h2:first-of-type{
+    font-size: 64;
+    margin-top: 18px;
+    margin-bottom: 0;
+    z-index: 99999999;
+}
+
+.center > img:first-of-type{
+    margin-top: 9px;
+}
+
+.center > p:first-of-type{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.center > img:nth-of-type(2){
+    margin-top: 20px;
+}
+
+.center > input{
+    margin-top: 20px;
+    z-index: 1000;
+    font-size: 36px;
+    border: none;
+    text-align: center;
+}
+
+.center > hr{
+    width: 309px;
+    border: 1.5px solid #FFE432;
+}
+
+.info{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 700px;
+}
+
+.columnone{
+    display: inline-flex;
+    flex-flow: column;
+    margin-left: 105px;
+    width: 125px;
+    align-items: center;
+    
+}
+
+.columnone > input{
+    position: relative;
+    border: none;
+    z-index: 999;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+}
+
+.columnone > hr{
+    width: 125px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.columnone > p{
+    font-size: 24px;
+    margin: 0;
+    color: #FFE432;
+}
+
+
+.columnTwo{
+    display: inline-flex;
+    flex-flow: column;
+    margin-left: 285px;
+    width: 125px;
+    align-items: center;
+    
+}
+
+.columnTwo > hr{
+    width: 125px;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.columnTwo > p:last-of-type{
+    font-size: 24px;
+    margin: 0;
+    color: #FFE432;
+}
+
+#date2{
+    font-size: 24px;
+    margin: 0;
+    color: #000000;
+}
+
+.info{
+    margin-top: 20px;
+}
+
+.center > h2:first-of-type{
+    color: black;
+}
